@@ -30,7 +30,7 @@ def homework_post():
         'comment':comment_receive
     }
     db.fanmessages.insert_one(doc)
-    return jsonify({'msg':'POST request!'})
+    return jsonify({'msg':'Comment Posted'})
 
 @app.route("/homework", methods=["GET"])
 def homework_get():
