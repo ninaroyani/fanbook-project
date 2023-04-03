@@ -37,5 +37,5 @@ def homework_get():
     message_list = list(db.fanmessages.find({},{'_id': False}))
     return jsonify({'messages':message_list})
 
-if __name__ =='_main_':
+if __name__ == '_main_':
     app.run('0.0.0.0', port=5000, debug=True)
